@@ -12,7 +12,7 @@ Three measured welding signals are used as inputs: `force`, `current`, and `volt
 
 
 #### Repository Structure
-In addition to the Pyiron-based workflow definition, this repository contains all scripts and source files required to execute the complete simulation pipeline:
+This repository primarily demonstrates the structure and implementation of the automated simulation workflow. In the full project environment, the workflow integrates:
 
 ##### Abaqus Scripts
 - `abaqusMacros.py`
@@ -45,6 +45,9 @@ In addition to the Pyiron-based workflow definition, this repository contains al
 
   Windows shortcut used to activate the Intel Fortran compiler environment.
 
+However, due to confidentiality and licensing restrictions, project-specific solver implementations, measurement data, and certain subroutines are not included in this public version.
+
+The focus of this repository is therefore on: The workflow architecture; Node dependencies and execution logic; Integration of preprocessing, simulation, and post-processing stages. The provided code illustrates how these components are orchestrated within Pyiron workflow, independent of proprietary project content.
 
 #### Pyiron workflow
 The Pyiron workflow orchestrates these components:
@@ -61,5 +64,5 @@ The Pyiron workflow orchestrates these components:
 
 - Post-processing and consolidation of `.odb` files
 
-The workflow is implemented using PyironFlow, enabling structured execution and dependency management across all simulation stages.
+The workflow is implemented using Pyiron workflow, enabling structured execution and dependency management across all simulation stages.
 
